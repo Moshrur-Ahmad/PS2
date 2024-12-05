@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="#" class="text-xl font-bold">Logo</a>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-white transition">Home</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+                    <a href="#specialties" class="text-gray-300 hover:text-white transition">Specialties</a>
+                    <a href="#projects" class="text-gray-300 hover:text-white transition">Projects</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition">Testimonials</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a>
+                </nav>
+
+                <button class="bg-yellow-500 hover:bg-yellow-400 text-black px-4 py-2 rounded-lg font-medium transition">
+                    Download CV
+                </button>
+
+                <button class="md:hidden text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen pt-16 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto px-4 py-20">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="flex-1 text-center md:text-left">
+                    <div class="inline-block bg-yellow-500/10 px-4 py-2 rounded-full mb-4">
+                        <span class="text-yellow-500">Web Developer</span>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                        Hi! This is<br>
+                        <span class="text-yellow-500">ZAHID HOSSAIN</span>
+                    </h1>
+                    <p class="text-xl text-gray-400 mb-8">
+                        As a web designer with four years of experience, I specialize in creating visually appealing and user-friendly websites. My expertise includes responsive design, UI/UX principles, and collaborating with clients to bring their visions to life.
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <a href="#contact" class="bg-yellow-500 hover:bg-yellow-400 text-black px-6 py-3 rounded-full text-lg font-medium transition">
+                            Let's Connect
+                        </a>
+                        <p class="items-center">View Portfolios-></p>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <img 
+                        src="./images/Hero-Image.png"
+                        alt="Developer"
+                        class="rounded-full w-72 h-72 object-cover border-4 border-yellow-500 shadow-2xl mx-auto"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section id="specialties" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <p class="text-center mb-4">Specialties</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
+                My Specialties
+            </h2>
+            <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+                As a web designer with four years of experience, I specialize in creating visually appealing and user-friendly websites. My expertise includes responsive design.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Specialties Cards -->
+                <div class="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition group">
+                    <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <img src="./images/Front.png" alt="">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Front-End Development</h3>
+                    <p class="text-gray-400">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition group">
+                    <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                       <img src="./images/back.png" alt="">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Back-End Development</h3>
+                    <p class="text-gray-400">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition group">
+                    <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <img src="./images/Full.png" alt="">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Full-Stack Development</h3>
+                    <p class="text-gray-400">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition group">
+                    <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <img src="./images/Web.png" alt="">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Web Application Security</h3>
+                    <p class="text-gray-400">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Project 1: E-commerce Development -->
+                <div class="bg-gray-700 rounded-lg overflow-hidden">
+                    <img src="./images/E-Commerce.png" alt="E-commerce Development" class="w-full h-60 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-commerce Development</h3>
+                        <p class="text-gray-400">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2: Cloud-Based Development -->
+                <div class="bg-gray-700 rounded-lg overflow-hidden">
+                    <img src="./images/cloud.png" alt="Cloud-Based Development" class="w-full h-60 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Cloud-Based Development</h3>
+                        <p class="text-gray-400">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3: Progressive Web Apps -->
+                <div class="bg-gray-700 rounded-lg overflow-hidden">
+                    <img src="./images/Progressive.png" alt="Progressive Web Apps" class="w-full h-60 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Progressive Web Apps</h3>
+                        <p class="text-gray-400">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4: AI-Powered Development -->
+                <div class="bg-gray-700 rounded-lg overflow-hidden">
+                    <img src="./images/Ai.png" alt="AI-Powered Development" class="w-full h-60 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">AI-Powered Development</h3>
+                        <p class="text-gray-400">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <body class="bg-black text-white">
+        <!-- Header -->
+        <header class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between h-16">
+                    <a href="#" class="text-xl font-bold">Logo</a>
+                    
+                    <nav class="hidden md:flex space-x-8">
+                        <a href="#home" class="text-gray-300 hover:text-white transition">Home</a>
+                        <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+                        <a href="#specialties" class="text-gray-300 hover:text-white transition">Specialties</a>
+                        <a href="#projects" class="text-gray-300 hover:text-white transition">Projects</a>
+                        <a href="#testimonials" class="text-gray-300 hover:text-white transition">Testimonials</a>
+                        <a href="#faq" class="text-gray-300 hover:text-white transition">FAQ</a>
+                        <a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a>
+                    </nav>
+    
+                    <button class="bg-yellow-500 hover:bg-yellow-400 text-black px-4 py-2 rounded-lg font-medium transition">
+                        Download CV
+                    </button>
+    
+                    <button class="md:hidden text-white">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+    
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
+                    Frequently Asked Questions
+                </h2>
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <button class="flex items-center justify-between w-full focus:outline-none">
+                            <h3 class="text-lg font-medium">What areas of web development do you focus on?</h3>
+                            <span class="text-yellow-500">+</span>
+                        </button>
+                        <div class="mt-4 hidden">
+                            <p class="text-gray-400">I specialize in web development, creating websites that deliver unique user experiences.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <button class="flex items-center justify-between w-full focus:outline-none">
+                            <h3 class="text-lg font-medium">Can I choose a specific platform for my website?</h3>
+                            <span class="text-yellow-500">+</span>
+                        </button>
+                        <div class="mt-4 hidden">
+                            <p class="text-gray-400">Yes, I work with various platforms and will recommend the best one for your needs.</p>
+                        </div>
+                    </div>
+                    <!-- Add more FAQs as needed -->
+                </div>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer class="bg-black py-10">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-gray-400">
+                    <div>
+                        <h4 class="font-bold text-white mb-2">Solutions</h4>
+                        <ul>
+                            <li>Glintopia</li>
+                            <li>Fluxway</li>
+                            <li>Fables</li>
+                            <li>PowerCore</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white mb-2">Customers</h4>
+                        <ul>
+                            <li>Glintopia</li>
+                            <li>Fluxway</li>
+                            <li>Fables</li>
+                            <li>PowerCore</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white mb-2">Partners</h4>
+                        <ul>
+                            <li>Glintopia</li>
+                            <li>Fluxway</li>
+                            <li>Fables</li>
+                            <li>PowerCore</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white mb-2">Contact</h4>
+                        <p>mdhasanmahmudshakil8@gmail.com</p>
+                    </div>
+                </div>
+                <div class="text-center text-gray-500 mt-8">
+                    <p>© 2024 All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    
+        <script>
+            // Simple toggle for FAQ items
+            document.querySelectorAll('#faq button').forEach(button => {
+                button.addEventListener('click', () => {
+                    const answer = button.nextElementSibling;
+                    const isOpen = answer.style.display === 'block';
+    
+                    // Hide all answers
+                    document.querySelectorAll('#faq div div').forEach(div => {
+                        div.style.display = 'none';
+                    });
+    
+                    // Toggle current answer
+                    answer.style.display = isOpen ? 'none' : 'block';
+                });
+            });
+        </script>
+</body>
+</html>
